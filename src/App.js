@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import CardContainer from './Containers/CardContainer'
 import Header from './Containers/Header'
 import Scroll from './Containers/Scroll'
+import ErrorBoundry from './Containers/ErrorBoundry'
 // import { robots } from './robots'
 
 class App extends Component {
@@ -30,7 +31,9 @@ class App extends Component {
       <>
          <Header handleSearch={this.handleSearch} search={search}/>
          <Scroll>
+           <ErrorBoundry>
            <CardContainer robots={filteredRobots}/>
+           </ErrorBoundry>
          </Scroll>
          
         
