@@ -10,6 +10,12 @@ class App extends Component {
     search: ""
   }
 
+  componentDidMount(){
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then(res => res.json())
+    .then(robots => this.setState({robots}))
+  }
+
   handleSearch = (event) => {
     this.setState({
       [event.target.name] : event.target.value
