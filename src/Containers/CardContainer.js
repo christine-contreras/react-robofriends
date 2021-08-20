@@ -4,7 +4,7 @@ import Card from '../Components/Card'
 const CardContainer = ({ robots }) => {
     return (
         <div className="tc">
-            { robots.length === 0 ?
+            { !robots.length ?
                 <h2 className="white">Loading...</h2>
                 :
                 robots.map(robot => {

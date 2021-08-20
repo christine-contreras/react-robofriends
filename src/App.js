@@ -5,7 +5,6 @@ import Scroll from './Containers/Scroll'
 // import { robots } from './robots'
 
 class App extends Component {
-
   state = {
     robots: [],
     search: ""
@@ -24,10 +23,12 @@ class App extends Component {
   }
 
   render() {
-    const filteredRobots = this.state.robots.filter(robot => robot.name.toLowerCase().includes(this.state.search.toLowerCase()))
+    const { robots, search } = this.state //destructure state to make app cleaner
+    
+    const filteredRobots = robots.filter(robot => robot.name.toLowerCase().includes(search.toLowerCase()))
     return (
       <>
-         <Header handleSearch={this.handleSearch} search={this.state.search}/>
+         <Header handleSearch={this.handleSearch} search={search}/>
          <Scroll>
            <CardContainer robots={filteredRobots}/>
          </Scroll>
