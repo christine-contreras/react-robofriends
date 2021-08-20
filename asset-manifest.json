@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/christine-contreras/react-robofriends/static/css/main.8790143b.chunk.css",
+    "main.js": "/christine-contreras/react-robofriends/static/js/main.59becc88.chunk.js",
+    "main.js.map": "/christine-contreras/react-robofriends/static/js/main.59becc88.chunk.js.map",
+    "runtime-main.js": "/christine-contreras/react-robofriends/static/js/runtime-main.e2cf1c39.js",
+    "runtime-main.js.map": "/christine-contreras/react-robofriends/static/js/runtime-main.e2cf1c39.js.map",
+    "static/js/2.d6b041d3.chunk.js": "/christine-contreras/react-robofriends/static/js/2.d6b041d3.chunk.js",
+    "static/js/2.d6b041d3.chunk.js.map": "/christine-contreras/react-robofriends/static/js/2.d6b041d3.chunk.js.map",
+    "index.html": "/christine-contreras/react-robofriends/index.html",
+    "static/css/main.8790143b.chunk.css.map": "/christine-contreras/react-robofriends/static/css/main.8790143b.chunk.css.map",
+    "static/js/2.d6b041d3.chunk.js.LICENSE.txt": "/christine-contreras/react-robofriends/static/js/2.d6b041d3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2cf1c39.js",
+    "static/js/2.d6b041d3.chunk.js",
+    "static/css/main.8790143b.chunk.css",
+    "static/js/main.59becc88.chunk.js"
+  ]
+}
