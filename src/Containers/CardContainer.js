@@ -4,7 +4,9 @@ import Card from '../Components/Card'
 const CardContainer = ({ robots }) => {
     return (
         <div className="tc">
-            {
+            { robots.length === 0 ?
+                <h2 className="white">Loading...</h2>
+                :
                 robots.map(robot => {
                     return <Card
                     key={robot.id}
@@ -13,6 +15,7 @@ const CardContainer = ({ robots }) => {
                     image={`https://robohash.org/${robot.id}?200x200`}
                     />
                 })
+                
             }
         </div>
     )

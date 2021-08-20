@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import CardContainer from './Containers/CardContainer'
 import Header from './Containers/Header'
-import { robots } from './robots'
+import Scroll from './Containers/Scroll'
+// import { robots } from './robots'
 
 class App extends Component {
 
   state = {
-    robots: robots,
+    robots: [],
     search: ""
   }
 
@@ -27,7 +28,10 @@ class App extends Component {
     return (
       <>
          <Header handleSearch={this.handleSearch} search={this.state.search}/>
-         <CardContainer robots={filteredRobots}/>
+         <Scroll>
+           <CardContainer robots={filteredRobots}/>
+         </Scroll>
+         
         
       </>
     )
