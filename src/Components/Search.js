@@ -8,7 +8,10 @@ export class Search extends Component {
                 className="ba b--green bg-lightest-blue pa3"
                 type="search" 
                 placeholder="search robot" 
-                name="search" />
+                name="search"
+                value={this.props.search}
+                onChange={(event) => this.props.handleSearch(event)} 
+                />
             </div>
         )
     }

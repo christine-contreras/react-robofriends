@@ -4,11 +4,24 @@ import Header from './Containers/Header'
 import { robots } from './robots'
 
 class App extends Component {
+
+  state = {
+    robots: robots,
+    search: ""
+  }
+
+  handleSearch = (event) => {
+    this.setState({
+      [event.target.name] : event.target.value
+    })
+  }
+
   render() {
+    const filteredRobots = this.state.robots.filter(robot => robot.name.toLowerCase().includes(this.state.search.toLowerCase()))
     return (
       <>
-         <Header/>
-        <CardContainer robots={robots}/>
+         <Header handleSearch={this.handleSearch} search={this.state.search}/>
+        <CardContainer robots={filteredRobots}/>
         
       </>
     )
