@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <>
          <Header handleSearch={this.handleSearch} search={this.state.search}/>
-        <CardContainer robots={filteredRobots}/>
+         <CardContainer robots={filteredRobots}/>
         
       </>
     )

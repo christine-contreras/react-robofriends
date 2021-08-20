@@ -4,7 +4,7 @@ import Search from '../Components/Search'
 const Header = ({handleSearch, search}) => {
     return (
         <div className="tc">
-            <h2>Robofriends</h2>
+            <h1 className="light-green">Robofriends</h1>
             <Search handleSearch={handleSearch} search={search}/>
         </div>
     )
