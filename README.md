@@ -1,6 +1,6 @@
 # Robofriends React App
 
-##Learnings
+## Learnings
 
 - set up react app
 - develop folder structure
